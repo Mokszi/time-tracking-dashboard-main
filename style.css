@@ -1,0 +1,321 @@
+body{
+    background-color: hsl(226, 43%, 10%);
+    color: hsl(236, 100%, 87%);
+    font-size: 15px;
+    font-family: "Rubik", serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section{
+    display: grid;
+    height: 60%;
+    width: 70%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.main{
+    grid-area: 1/1/3/2;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 7px;
+    margin: 5%;
+}
+
+.top_main{
+    background-color: hsl(246, 80%, 60%);
+    height: 70%;
+    border-radius: 10px;
+    padding: 10%;
+}
+
+.top_main img{
+    width: 30%;
+    border: 3px solid hsl(236, 100%, 87%);
+    border-radius: 100%;
+}
+
+.work{
+    grid-area: 1/2/2/3;
+    background-color: hsl(15, 100%, 70%);
+    display: flex;
+    align-items: end;
+    border-radius: 10px;
+    margin: 5%;
+    background-image: url(images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position-x: 180px;
+    background-position-y: -10px;
+}
+
+.top_work{
+    background-color: hsl(235, 46%, 20%);
+    height: 70%;
+    border-radius: 7px;
+    padding: 10% 10% 0% 10%;
+    width: 100%;
+}
+
+.top_bar_work{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+
+.top_bar_work img{
+    height: 100%;
+    margin-left: auto;
+}
+
+.hrs_work{
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    padding-top: 10%;
+}
+
+.last_week_work{
+    color: hsl(235, 45%, 61%);
+    font-size: 15px;
+}
+
+.play{
+    grid-area: 1/3/2/4;
+    background-color: hsl(195, 74%, 62%);
+    display: flex;
+    align-items: end;
+    border-radius: 10px;
+    margin: 5%;
+    background-image: url(images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position-x: 180px;
+    background-position-y: -10px;
+}
+
+.top_play{
+    background-color: hsl(235, 46%, 20%);
+    height: 70%;
+    border-radius: 7px;
+    padding: 10% 10% 0% 10%;
+    width: 100%;
+}
+
+.top_bar_play{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+
+.top_bar_play img{
+    height: 100%;
+    margin-left: auto;
+}
+
+.hrs_play{
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    padding-top: 10%;
+}
+
+.last_week_play{
+    color: hsl(235, 45%, 61%);
+    font-size: 15px;
+}
+
+.study{
+    grid-area: 1/4/2/5;
+    background-color: hsl(348, 100%, 68%);
+    display: flex;
+    align-items: end;
+    border-radius: 10px;
+    margin: 5%;
+    background-image: url(images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position-x: 180px;
+    background-position-y: -10px;
+}
+
+.top_study{
+    background-color: hsl(235, 46%, 20%);
+    height: 70%;
+    border-radius: 7px;
+    padding: 10% 10% 0% 10%;
+    width: 100%;
+}
+
+.top_bar_study{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+
+.top_bar_study img{
+    height: 100%;
+    margin-left: auto;
+}
+
+.hrs_study{
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    padding-top: 10%;
+}
+
+.last_week_study{
+    color: hsl(235, 45%, 61%);
+    font-size: 15px;
+}
+
+.exercise{
+    grid-area: 2/2/3/3;
+    background-color: hsl(145, 58%, 55%);
+    display: flex;
+    align-items: end;
+    border-radius: 10px;
+    margin: 5%;
+    background-image: url(images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position-x: 180px;
+}
+
+.top_exercise{
+    background-color: hsl(235, 46%, 20%);
+    height: 70%;
+    border-radius: 7px;
+    padding: 10% 10% 0% 10%;
+    width: 100%;
+}
+
+.top_bar_exercise{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+
+.top_bar_exercise img{
+    height: 100%;
+    margin-left: auto;
+}
+
+.hrs_exercise{
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    padding-top: 10%;
+}
+
+.last_week_exercise{
+    color: hsl(235, 45%, 61%);
+    font-size: 15px;
+}
+
+.social{
+    grid-area: 2/3/3/4;
+    background-color: hsl(264, 64%, 52%);
+    display: flex;
+    align-items: end;
+    border-radius: 10px;
+    margin: 5%;
+    background-image: url(images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position-x: 180px;
+    background-position-y: -10px;
+}
+
+.top_social{
+    background-color: hsl(235, 46%, 20%);
+    height: 70%;
+    border-radius: 7px;
+    padding: 10% 10% 0% 10%;
+    width: 100%;
+}
+
+.top_bar_social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+
+.top_bar_social img{
+    height: 100%;
+    margin-left: auto;
+}
+
+.hrs_social{
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    padding-top: 10%;
+}
+
+.last_week_social{
+    color: hsl(235, 45%, 61%);
+    font-size: 15px;
+}
+
+.selfcare{
+    grid-area: 2/4/3/5;
+    background-color: hsl(43, 84%, 65%);
+    display: flex;
+    align-items: end;
+    border-radius: 10px;
+    margin: 5%;
+    background-image: url(images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position-x: 180px;
+    background-position-y: -10px;
+}
+
+.top_selfcare{
+    background-color: hsl(235, 46%, 20%);
+    height: 70%;
+    border-radius: 7px;
+    padding: 10% 10% 0% 10%;
+    width: 100%;
+}
+
+.top_bar_self-care{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+}
+
+.top_bar_self-care img{
+    height: 100%;
+    margin-left: auto;
+    /*filter: grayscale(100%) brightness(0) invert(100%);*/
+}
+
+.hrs_self-care{
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    padding-top: 10%;
+}
+
+.last_week_self-care{
+    color: hsl(235, 45%, 61%);
+    font-size: 15px;
+}
