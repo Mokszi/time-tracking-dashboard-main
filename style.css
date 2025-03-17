@@ -26,7 +26,7 @@ section{
 
 .top_main{
     background-color: hsl(246, 80%, 60%);
-    height: 70%;
+    height: 55%;
     border-radius: 10px;
     padding: 10%;
 }
@@ -35,6 +35,30 @@ section{
     width: 30%;
     border: 3px solid hsl(236, 100%, 87%);
     border-radius: 100%;
+}
+
+.report{
+    font-size: 18px;
+    margin-top: 20%;
+}
+
+.name{
+    font-size: 50px;
+    color: white;
+    font-weight: 300;
+    margin-top: 0%;
+    padding-bottom: 10%;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+    padding-top: 8%;
+}
+
+.options p{
+    margin: 5%;
 }
 
 .work{
