@@ -58,15 +58,12 @@ section{
     padding-top: 10%;
 }
 
-.options p{
+.options a{
     margin: 3%;
+    color: hsl(236, 100%, 87%);
 }
 
-.options p:hover{
-    color: white;
-}
-
-.weekly{
+.options a:hover{
     color: white;
 }
 
