@@ -26,7 +26,7 @@ section{
 
 .top_main{
     background-color: hsl(246, 80%, 60%);
-    height: 55%;
+    height: 60%;
     border-radius: 10px;
     padding: 10%;
 }
@@ -47,18 +47,32 @@ section{
     color: white;
     font-weight: 300;
     margin-top: 0%;
-    padding-bottom: 10%;
+    padding-bottom: 4%;
 }
 
 .options{
     display: flex;
     flex-direction: column;
+    justify-content: end;
     padding-left: 8%;
-    padding-top: 8%;
+    padding-top: 10%;
 }
 
 .options p{
-    margin: 5%;
+    margin: 3%;
+}
+
+.options p:hover{
+    color: white;
+}
+
+.weekly{
+    color: white;
+}
+
+.monthly{
+    margin-bottom: 0%;
+    padding-bottom: 0%;
 }
 
 .work{
@@ -83,6 +97,10 @@ section{
     width: 100%;
 }
 
+.top_work:hover{
+    background-color: hsl(235, 45%, 61%);
+}
+
 .top_bar_work{
     display: flex;
     flex-direction: row;
@@ -96,6 +114,10 @@ section{
     margin-left: auto;
 }
 
+.top_bar_work img:hover{
+    filter: grayscale(100%) brightness(0) invert(100%);
+}
+
 .hrs_work{
     color: white;
     font-size: 50px;
@@ -104,7 +126,7 @@ section{
 }
 
 .last_week_work{
-    color: hsl(235, 45%, 61%);
+    color: hsl(236, 100%, 87%);
     font-size: 15px;
 }
 
@@ -130,6 +152,10 @@ section{
     width: 100%;
 }
 
+.top_play:hover{
+    background-color: hsl(235, 45%, 61%);
+}
+
 .top_bar_play{
     display: flex;
     flex-direction: row;
@@ -143,6 +169,10 @@ section{
     margin-left: auto;
 }
 
+.top_bar_play img:hover{
+    filter: grayscale(100%) brightness(0) invert(100%);
+}
+
 .hrs_play{
     color: white;
     font-size: 50px;
@@ -151,7 +181,7 @@ section{
 }
 
 .last_week_play{
-    color: hsl(235, 45%, 61%);
+    color: hsl(236, 100%, 87%);
     font-size: 15px;
 }
 
@@ -177,6 +207,10 @@ section{
     width: 100%;
 }
 
+.top_study:hover{
+    background-color: hsl(235, 45%, 61%);
+}
+
 .top_bar_study{
     display: flex;
     flex-direction: row;
@@ -190,6 +224,10 @@ section{
     margin-left: auto;
 }
 
+.top_bar_study img:hover{
+    filter: grayscale(100%) brightness(0) invert(100%);
+}
+
 .hrs_study{
     color: white;
     font-size: 50px;
@@ -198,7 +236,7 @@ section{
 }
 
 .last_week_study{
-    color: hsl(235, 45%, 61%);
+    color: hsl(236, 100%, 87%);
     font-size: 15px;
 }
 
@@ -223,6 +261,10 @@ section{
     width: 100%;
 }
 
+.top_exercise:hover{
+    background-color: hsl(235, 45%, 61%);
+}
+
 .top_bar_exercise{
     display: flex;
     flex-direction: row;
@@ -236,6 +278,10 @@ section{
     margin-left: auto;
 }
 
+.top_bar_exercise img:hover{
+    filter: grayscale(100%) brightness(0) invert(100%);
+}
+
 .hrs_exercise{
     color: white;
     font-size: 50px;
@@ -244,7 +290,7 @@ section{
 }
 
 .last_week_exercise{
-    color: hsl(235, 45%, 61%);
+    color: hsl(236, 100%, 87%);
     font-size: 15px;
 }
 
@@ -270,6 +316,10 @@ section{
     width: 100%;
 }
 
+.top_social:hover{
+    background-color: hsl(235, 45%, 61%);
+}
+
 .top_bar_social{
     display: flex;
     flex-direction: row;
@@ -283,6 +333,10 @@ section{
     margin-left: auto;
 }
 
+.top_bar_social img:hover{
+    filter: grayscale(100%) brightness(0) invert(100%);
+}
+
 .hrs_social{
     color: white;
     font-size: 50px;
@@ -291,7 +345,7 @@ section{
 }
 
 .last_week_social{
-    color: hsl(235, 45%, 61%);
+    color: hsl(236, 100%, 87%);
     font-size: 15px;
 }
 
@@ -326,10 +380,17 @@ section{
     font-weight: 400;
 }
 
+.top_selfcare:hover{
+    background-color: hsl(235, 45%, 61%);
+}
+
 .top_bar_self-care img{
     height: 100%;
     margin-left: auto;
-    /*filter: grayscale(100%) brightness(0) invert(100%);*/
+}
+
+.top_bar_self-care img:hover{
+    filter: grayscale(100%) brightness(0) invert(100%);
 }
 
 .hrs_self-care{
@@ -340,6 +401,6 @@ section{
 }
 
 .last_week_self-care{
-    color: hsl(235, 45%, 61%);
+    color: hsl(236, 100%, 87%);
     font-size: 15px;
 }
