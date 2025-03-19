@@ -1,15 +1,32 @@
 document.addEventListener('DOMContentLoaded', function() {
     let daily = document.getElementById('daily');
     let weekly = document.getElementById('weekly');
+    let monthly = document.getElementById('monthly');
 
     // Define the clicked function
-    function clicked() {
-        console.log('Clicked');
+    function daily_click() {
+        daily.style.color = "white";
+        weekly.style.color = "hsl(236, 100%, 87%)";
+        monthly.style.color = "hsl(236, 100%, 87%)";
     }
 
-    // Attach the event listener to the daily link
-    daily.addEventListener("click", clicked);
+    daily.addEventListener("click", daily_click);
 
-    // Set the color of the weekly link to white
+    function weekly_click() {
+        daily.style.color = "hsl(236, 100%, 87%)";
+        weekly.style.color = "white";
+        monthly.style.color = "hsl(236, 100%, 87%)";
+    }
+
+    weekly.addEventListener("click", weekly_click);
+
+    function monthly_click() {
+        daily.style.color = "hsl(236, 100%, 87%)";
+        weekly.style.color = "hsl(236, 100%, 87%)";
+        monthly.style.color = "white";
+    }
+
+    monthly.addEventListener("click", monthly_click);
+
     weekly.style.color = "white";
 });
