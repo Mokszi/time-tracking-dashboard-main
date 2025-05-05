@@ -29,4 +29,15 @@ document.addEventListener('DOMContentLoaded', function() {
     monthly.addEventListener("click", monthly_click);
 
     weekly.style.color = "white";
+
+    fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(item => {
+            if (item.title === "Play") {
+                console.log("lpaa");
+            }
+        });
+    })
+    .catch(error => console.error('Error:', error));
 });
