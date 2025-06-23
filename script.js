@@ -3,41 +3,78 @@ document.addEventListener('DOMContentLoaded', function() {
     let weekly = document.getElementById('weekly');
     let monthly = document.getElementById('monthly');
 
-    // Define the clicked function
-    function daily_click() {
-        daily.style.color = "white";
-        weekly.style.color = "hsl(236, 100%, 87%)";
-        monthly.style.color = "hsl(236, 100%, 87%)";
-    }
+    const links = document.querySelectorAll('.options a');
+    
+    // Set default active
+    document.getElementById('weekly').classList.add('active');
 
-    daily.addEventListener("click", daily_click);
+    links.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent navigation
 
-    function weekly_click() {
-        daily.style.color = "hsl(236, 100%, 87%)";
-        weekly.style.color = "white";
-        monthly.style.color = "hsl(236, 100%, 87%)";
-    }
+            // Remove active class from all
+            links.forEach(l => l.classList.remove('active'));
 
-    weekly.addEventListener("click", weekly_click);
-
-    function monthly_click() {
-        daily.style.color = "hsl(236, 100%, 87%)";
-        weekly.style.color = "hsl(236, 100%, 87%)";
-        monthly.style.color = "white";
-    }
-
-    monthly.addEventListener("click", monthly_click);
-
-    weekly.style.color = "white";
-
-    fetch('data.json')
-    .then(response => response.json())
-    .then(data => {
-        data.forEach(item => {
-            if (item.title === "Play") {
-                console.log("lpaa");
-            }
+            // Add active class to clicked one
+            this.classList.add('active');
         });
-    })
-    .catch(error => console.error('Error:', error));
+    });
+
+    daily.addEventListener('click', () => {
+        document.getElementById("hrs_work").innerHTML = "5hrs";
+        document.getElementById("last_week_work").innerHTML = "Last Week - 7hrs";
+        document.getElementById("hrs_play").innerHTML = "1hrs";
+        document.getElementById("last_week_play").innerHTML = "Last Week - 2hrs";
+        document.getElementById("hrs_study").innerHTML = "0hrs";
+        document.getElementById("last_week_study").innerHTML = "Last Week - 1hrs";
+        document.getElementById("hrs_exercise").innerHTML = "1hrs";
+        document.getElementById("last_week_exercise").innerHTML = "Last Week - 1hrs";
+        document.getElementById("hrs_social").innerHTML = "1hrs";
+        document.getElementById("last_week_social").innerHTML = "Last Week - 3hrs";
+        document.getElementById("hrs_self-care").innerHTML = "0hrs";
+        document.getElementById("last_week_self-care").innerHTML = "Last Week - 1hrs";
+    });
+    
+    weekly.addEventListener('click', () => {
+        document.getElementById("hrs_work").innerHTML = "32hrs";
+        document.getElementById("last_week_work").innerHTML = "Last Week - 36hrs";
+        document.getElementById("hrs_play").innerHTML = "10hrs";
+        document.getElementById("last_week_play").innerHTML = "Last Week - 8hrs";
+        document.getElementById("hrs_study").innerHTML = "4hrs";
+        document.getElementById("last_week_study").innerHTML = "Last Week - 7hrs";
+        document.getElementById("hrs_exercise").innerHTML = "4hrs";
+        document.getElementById("last_week_exercise").innerHTML = "Last Week - 5hrs";
+        document.getElementById("hrs_social").innerHTML = "5hrs";
+        document.getElementById("last_week_social").innerHTML = "Last Week - 10hrs";
+        document.getElementById("hrs_self-care").innerHTML = "2hrs";
+        document.getElementById("last_week_self-care").innerHTML = "Last Week - 2hrs";
+    });
+
+    monthly.addEventListener('click', () => {
+        document.getElementById("hrs_work").innerHTML = "103hrs";
+        document.getElementById("last_week_work").innerHTML = "Last Week - 128hrs";
+        document.getElementById("hrs_play").innerHTML = "23hrs";
+        document.getElementById("last_week_play").innerHTML = "Last Week - 29hrs";
+        document.getElementById("hrs_study").innerHTML = "13hrs";
+        document.getElementById("last_week_study").innerHTML = "Last Week - 19hrs";
+        document.getElementById("hrs_exercise").innerHTML = "11hrs";
+        document.getElementById("last_week_exercise").innerHTML = "Last Week - 18hrs";
+        document.getElementById("hrs_social").innerHTML = "21hrs";
+        document.getElementById("last_week_social").innerHTML = "Last Week - 23hrs";
+        document.getElementById("hrs_self-care").innerHTML = "7hrs";
+        document.getElementById("last_week_self-care").innerHTML = "Last Week - 11hrs";
+    });
+
+
+    // Your fetch remains unchanged
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(item => {
+                if (item.title === "Play") {
+                    console.log("lpaa");
+                }
+            });
+        })
+        .catch(error => console.error('Error:', error));
 });

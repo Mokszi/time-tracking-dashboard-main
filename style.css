@@ -67,6 +67,10 @@ section{
     color: white;
 }
 
+.options a.active {
+    color: white;
+}
+
 .monthly{
     margin-bottom: 0%;
     padding-bottom: 0%;
